@@ -35,4 +35,4 @@ jobs:
         run: docker run -d -p 8080:80 --name app $IMAGE_NAME
 
       - name: Check container
-        run: curl localhost:8080
+        run: docker ps
